@@ -31,8 +31,8 @@ class PingboardWorkflow < Formula
 
       Finally link the custom git hooks for pivotal integration.
 
-        ln -s #{opt_prefix}/share/hooks/prepare-commit-msg CODBASE_PATH/pingboard/.git/hooks/prepare-commit-msg
-        ln -s #{opt_prefix}/share/hooks/prepare-commit-msg CODBASE_PATH/pingboard/.git/hooks/prepare-commit-msg
+        ln -sf #{opt_prefix}/share/hooks/prepare-commit-msg CODBASE_PATH/pingboard/.git/hooks/prepare-commit-msg
+        ln -sf #{opt_prefix}/share/hooks/pre-flow-feature-finish CODBASE_PATH/pingboard/.git/hooks/pre-flow-feature-finish
     EOS
   end
 end
