@@ -1,6 +1,6 @@
 require 'formula'
 
-class DevWorkflow < Formula
+class PingboardDevWorkflow < Formula
   homepage 'https://github.com/pingboard/dev-workflow'
   url 'https://github.com/pingboard/dev-workflow/archive/0.0.2.tar.gz'
   sha1 '6ad64265cb1996c68d8a7d7d6411d6334a81c160'
