@@ -3,7 +3,7 @@ require 'formula'
 class PingboardDevWorkflow < Formula
   homepage 'https://github.com/pingboard/dev-workflow'
   url 'https://github.com/pingboard/dev-workflow/archive/0.0.2.tar.gz'
-  sha1 '6ad64265cb1996c68d8a7d7d6411d6334a81c160'
+  sha256 '898b1e5849d3866a74e4cbf6b63cd9d4af192c02a82b73a9d6942f95a3573201'
 
   depends_on 'git-flow-avh'
   depends_on 'pivotal-tracker' => :ruby
