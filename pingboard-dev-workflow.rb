@@ -6,21 +6,21 @@ class PingboardDevWorkflow < Formula
   sha256 '898b1e5849d3866a74e4cbf6b63cd9d4af192c02a82b73a9d6942f95a3573201'
 
   depends_on 'git-flow-avh'
-  depends_on 'pivotal-tracker' => :ruby
+  depends_on 'pivotal-tracker'
   depends_on 'phantomjs'
   depends_on 'postgresql'
   depends_on 'redis'
   depends_on 'elasticsearch'
-  depends_on 'overcommit' => :ruby
-  depends_on 'bundler' => :ruby
-  
+  depends_on 'overcommit'
+  depends_on 'bundler'
+
   def install
     bin.install 'git-pivotal'
     share.install 'hooks'
   end
 
   def caveats
-    s = <<-EOS.undent
+    <<-EOS
       Add your personal pivotal token and the Pingboard project id to the git config
 
         git config --add pivotal.token PIVOTAL_TOKEN
