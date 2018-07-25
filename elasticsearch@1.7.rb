@@ -9,7 +9,10 @@ class ElasticsearchAT17 < Formula
 
   keg_only :versioned_formula
 
-  depends_on "java8"
+  # depends_on cask: "java8"
+  # nb. ES definitely depends on Java, but depending on a cask is tricky,
+  # apparently. `cask: whatever` is in the Homebrew docs but Homebrew thinks
+  # this formula is invalid. :\
 
   def cluster_name
     "elasticsearch_#{ENV["USER"]}"
