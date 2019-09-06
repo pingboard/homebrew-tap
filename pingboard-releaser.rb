@@ -7,7 +7,7 @@ class PingboardReleaser < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/pingboard/pingboard-releaser/releases/download/v0.4.1/pingboard-releaser_0.4.1_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    url "https://github.com/pingboard/pingboard-releaser/releases/download/v0.4.1/pingboard-releaser_0.4.1_Darwin_x86_64.tar.gz", :using => CustomGitHubPrivateRepositoryDownloadStrategy
     sha256 "434de16d4ec1ea761463ea6e6cb4091f5d33402bc761b386585a5a80c70555eb"
   elsif OS.linux?
   end
